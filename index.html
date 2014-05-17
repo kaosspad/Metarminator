@@ -35,34 +35,103 @@
 
 <p><em>The source code served as an example, it is, by no means, a commercial grade product. It might contain errors or flaws, and it was created for demonstration purpose only.</em></p>
 
-<p>Metarminator allows you to batch edit iTunes Metadata of your iTunes musics and videos.</p>
+<p><strong>Metarminator</strong> allows you to batch edit <strong>iTunes Metadata</strong> of your iTunes musics and videos, whether iTunes allows you to edit them or not.</p>
 
-<p>It was originally <a href="https://github.com/x43x61x69/AtomicParsleyGUI">AtomicParsleyGUI</a>, now it use AVFoundation framework to read and write iTunes Metadata instead of AtomicParsley.</p>
+<p>It was originally <a href="https://github.com/x43x61x69/AtomicParsleyGUI">AtomicParsleyGUI</a>, now it utilized <strong>Apple's AVFoundation framework</strong> to read and write iTunes Metadata instead of AtomicParsley.</p>
 
-<p><em>For donations, you can send Amazon.com/.co.uk gift cards to <a href="mailto:contact@reversi.ng">contact@reversi.ng</a>.</em></p>
+<p><a href="https://github.com/x43x61x69/Metarminator/issues">Bug report and feedback</a>.</p>
 
-<p>Bug report? Please do it <a href="https://github.com/x43x61x69/Metarminator/issues">here</a>.</p>
+<hr><h2>
+<a name="q--a" class="anchor" href="#q--a"><span class="octicon octicon-link"></span></a>Q &amp; A</h2>
 
-<h2>
+<p><strong>Q: Is this really free?</strong></p>
+
+<p><strong>A:</strong> Currently <strong>YES</strong>. But I do accept donations. You can send Amazon.com/Amazon.co.uk gift cards to my <a href="contact@reversi.ng">email</a>.</p>
+
+<p><strong>Q: What does it do?</strong></p>
+
+<p><strong>A:</strong> Metarminator allows you to batch edit iTunes Metadata of your iTunes musics and videos, whether iTunes allows you to edit them or not. Such as your personal purchase info, Apple ID, etc.</p>
+
+<p><strong>Q: What formats does it support?</strong></p>
+
+<p><strong>A:</strong> Currently, Metarminator supports those formats that are iTunes Metadata compatible: <strong>MP4</strong>, <strong>M4A</strong>, <strong>M4P</strong>, <strong>M4V</strong> and <strong>M4B</strong>.</p>
+
+<p><strong>Q: Why MP3s are not supported?</strong></p>
+
+<p><strong>A:</strong> While they are lots of tools out there can edit ID3 tags, there are only few that does iTunes Metadata. This tool was created to help people get the ability to view, edit or remove the info they wish. As MP3s is <strong>not iTunes Metadata compatible</strong> (it use <strong>ID3</strong>), it's not supported by Metarminator yet.</p>
+
+<p><strong>Q: Are there limitations to the values?</strong></p>
+
+<p><strong>A:</strong> The limitation varies, as listed below.</p>
+
+<ul>
+<li>
+<strong>For fields that has sting as value:</strong> Less than <strong>256</strong> English characters (Excepts <strong>lyrics</strong>, which has no limit).</li>
+<li>
+<strong>The fields that has number as value:</strong> Between <strong>0</strong> and <strong>65535</strong>. Some fields might accept larger values.</li>
+<li>
+<strong>For cover artworks:</strong> You can add <strong>ANY</strong> image that supported by OS X. They will be converted and stored as <strong>JPEG</strong> in the metada. You can drag and drop them into the preview box or use the "Add" button.</li>
+</ul><p><strong>Q: What's that "Scale" option for cover artwork?</strong></p>
+
+<p><strong>A:</strong> If "scale" is enabled, the artwork will be resized to <strong>600px</strong> before it's being stored, depends on the longest side. Exporting format can be <strong>BMP</strong>, <strong>GIF</strong>, <strong>JPEG</strong>, <strong>PNG</strong> and <strong>TIFF</strong>.</p>
+
+<p><strong>Q: Does it has a fields filter?</strong></p>
+
+<p><strong>A:</strong> Yes, the right bottom corner button opens a drawer of filters. The disabled fields will not apply to the saving files. You can use the save button at the bottom of the drawer to save current filter selections.</p>
+
+<p><strong>Q: What does the AAC type has to do with the User ID?</strong></p>
+
+<p>A: Apple currently has 5 types of AACs, they can either be:</p>
+
+<ul>
+<li>
+<strong>Normal:</strong> Those that are not from Apple will be labeled as AAC files in iTunes.</li>
+<li>
+<strong>Purchased:</strong> Those are purchased from iTunes will be labeled as Purchased AAC. The User ID must be greater than 0 as it should be purchased by someone to be a "Purchased".</li>
+<li>
+<strong>Matched:</strong> Those were matched and re-downloaded from iTunes Match (iCloud) will be labeled as Matched AAC. The User ID must be greater than 0 as it should be "Matched" by someone's iCloud account to be a "Matched".</li>
+<li>
+<strong>Mastered for iTunes:</strong> Some of the musics are mastered for iTunes when they were sold on iTunes Store. This can be either for a Purchased AAC or a Matched AAC file. Normal AAC can't have this tag.</li>
+</ul><p><strong>Q: What does the "Remove Personal Info" feature do?</strong></p>
+
+<p><strong>A:</strong> It removes all the data I currently know that are related to personal info that might be able to trace back to you. (<strong>Purchased by</strong>, <strong>Apple ID</strong>, <strong>Purchased date</strong>, and <strong>User ID</strong>) As Apple might add anything new (and possibly hidden), the ONLY secure way to make sure a file is untraceable is to re-encode it.</p>
+
+<p><strong>Q: Will it ever support OS X 10.8 or lower?</strong></p>
+
+<p><strong>A:</strong> No. Some APIs are only available in 10.9 and above, and Apple has made it a nightmare for developers trying to use old SDKs since Xcode 5. However, this project is open source, licensed under GPL v3. Feel free to port it to older SDKs if you really wanted to have it working on your older setups.</p>
+
+<p><strong>Q: I found a bug. Where can I report it?</strong></p>
+
+<p><strong>A:</strong> Thank you. Please open an issue <a href="https://github.com/x43x61x69/Metarminator/issues">here</a>.</p>
+
+<p><strong>Q: I wish it to have other features.</strong></p>
+
+<p><strong>A:</strong> Sure. Please open an issue <a href="https://github.com/x43x61x69/Metarminator/issues">here</a>.</p>
+
+<hr><h2>
 <a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h2>
 
-<p>v0.2.1:</p>
+<p><strong>v0.2.2:</strong></p>
+
+<ul>
+<li>Bug fix - Fix the link menu.</li>
+</ul><p><strong>v0.2.1:</strong></p>
 
 <ul>
 <li>Bug fix.</li>
-</ul><p>v0.2:</p>
+</ul><p><strong>v0.2:</strong></p>
 
 <ul>
 <li>Bug fix - Codesign issue.</li>
-</ul><p>v0.1.1:</p>
+</ul><p><strong>v0.1.1:</strong></p>
 
 <ul>
 <li>Bug fix - Silents on launch update check.</li>
-</ul><p>v0.1:</p>
+</ul><p><strong>v0.1:</strong></p>
 
 <ul>
 <li>Initial release.</li>
-</ul><h2>
+</ul><hr><h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>Copyright (C) 2014  Cai, Zhi-Wei.</p>
