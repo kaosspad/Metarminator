@@ -1816,24 +1816,12 @@ NSString *stringForOSType(OSType theOSType)
 
 - (IBAction)getSupport:(id)sender
 {
-    NSString *url;
-    NSUInteger tag;
-    if ([sender isKindOfClass:[NSMenuItem class]]) {
-        NSMenuItem *s = (NSMenuItem *)sender;
-        tag = s.tag;
-    } else if ([sender isKindOfClass:[NSButton class]]) {
-        NSButton *s = (NSButton *)sender;
-        tag = s.tag;
-    }
-    switch (tag) {
-        case 1:
-            url = CONST_DEVELOPER_URL;
-            break;
-        default:
-            url = CONST_SUPPORT_URL;
-            break;
-    }
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:CONST_SUPPORT_URL]];
+}
+
+- (IBAction)developerWebsite:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:CONST_DEVELOPER_URL]];
 }
 
 @end

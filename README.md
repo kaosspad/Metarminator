@@ -25,6 +25,9 @@ Bug report? Please do it [here](https://github.com/x43x61x69/Metarminator/issues
 Changelog
 ---------
 
+v0.2.2:
+* Bug fix - Fix the link menu.
+
 v0.2.1:
 * Bug fix.
 

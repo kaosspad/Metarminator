@@ -20,7 +20,7 @@
 
 #pragma mark - Define Consts
 
-#define CONST_DEVELOPER_URL       @"http: //reversi.ng"
+#define CONST_DEVELOPER_URL       @"http://reversi.ng"
 #define CONST_RELEASE_NOTE_URL    @"https://github.com/x43x61x69/Metarminator"
 #define CONST_SUPPORT_URL         @"https://github.com/x43x61x69/Metarminator/issues"
 #define CONST_UPDATE_CHECK_URL    @"https://raw.githubusercontent.com/x43x61x69/Metarminator/master/Source/Metarminator/Metarminator-Info.plist"
@@ -239,5 +239,6 @@
 - (IBAction)optionsDrawerCalibrate:(NSButton *)sender;
 - (IBAction)update:(id)sender;
 - (IBAction)getSupport:(id)sender;
+- (IBAction)developerWebsite:(id)sender;
 
 @end
