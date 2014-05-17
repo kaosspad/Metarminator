@@ -43,6 +43,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-AtomicParsley is GPL software; you can freely distribute, redistribute, modify & use under the terms of the GNU General Public License; either version 2 or its successor.
-
 Icon designed by [Turbomilk](http://www.turbomilk.com). (info@turbomilk.com)
