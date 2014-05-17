@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B751C4E61925B11400EEDD44 /* Image.car in Resources */ = {isa = PBXBuildFile; fileRef = B751C4E51925B11400EEDD44 /* Image.car */; };
+		B767326419205DB30099F302 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767326319205DB30099F302 /* Cocoa.framework */; };
+		B767326E19205DB30099F302 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B767326C19205DB30099F302 /* InfoPlist.strings */; };
+		B767327019205DB30099F302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B767326F19205DB30099F302 /* main.m */; };
+		B767327419205DB30099F302 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B767327219205DB30099F302 /* Credits.rtf */; };
+		B767327719205DB30099F302 /* MetarminatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B767327619205DB30099F302 /* MetarminatorAppDelegate.m */; };
+		B767327A19205DB40099F302 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B767327819205DB40099F302 /* MainMenu.xib */; };
+		B767327C19205DB40099F302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B767327B19205DB40099F302 /* Images.xcassets */; };
+		B767328319205DB40099F302 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767328219205DB40099F302 /* XCTest.framework */; };
+		B767328419205DB40099F302 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767326319205DB30099F302 /* Cocoa.framework */; };
+		B767328C19205DB40099F302 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B767328A19205DB40099F302 /* InfoPlist.strings */; };
+		B767328E19205DB40099F302 /* MetarminatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B767328D19205DB40099F302 /* MetarminatorTests.m */; };
+		B767329919205E2B0099F302 /* Appicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B767329819205E2B0099F302 /* Appicon.icns */; };
+		B76732A019205EE70099F302 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767329F19205EE70099F302 /* AVFoundation.framework */; };
+		B76C6E1D1924AA8B001E2DF1 /* Data.car in Resources */ = {isa = PBXBuildFile; fileRef = B76C6E1C1924AA8B001E2DF1 /* Data.car */; };
+		B7BA32C119208B3F00096BD9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B7BA32BF19208B3E00096BD9 /* LICENSE */; };
+		B7BA32C219208B3F00096BD9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B7BA32C019208B3E00096BD9 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B767328519205DB40099F302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B767325819205DB30099F302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B767325F19205DB30099F302;
+			remoteInfo = Metarminator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7B29C9319225BD700CA1FF8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B751C4E51925B11400EEDD44 /* Image.car */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Image.car; sourceTree = "<group>"; };
+		B767326019205DB30099F302 /* Metarminator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metarminator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B767326319205DB30099F302 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B767326619205DB30099F302 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B767326719205DB30099F302 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B767326819205DB30099F302 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B767326B19205DB30099F302 /* Metarminator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Metarminator-Info.plist"; sourceTree = "<group>"; };
+		B767326D19205DB30099F302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B767326F19205DB30099F302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B767327119205DB30099F302 /* Metarminator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metarminator-Prefix.pch"; sourceTree = "<group>"; };
+		B767327319205DB30099F302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B767327519205DB30099F302 /* MetarminatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetarminatorAppDelegate.h; sourceTree = "<group>"; };
+		B767327619205DB30099F302 /* MetarminatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetarminatorAppDelegate.m; sourceTree = "<group>"; };
+		B767327919205DB40099F302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B767327B19205DB40099F302 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B767328119205DB40099F302 /* MetarminatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetarminatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B767328219205DB40099F302 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B767328919205DB40099F302 /* MetarminatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetarminatorTests-Info.plist"; sourceTree = "<group>"; };
+		B767328B19205DB40099F302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B767328D19205DB40099F302 /* MetarminatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetarminatorTests.m; sourceTree = "<group>"; };
+		B767329819205E2B0099F302 /* Appicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Appicon.icns; sourceTree = "<group>"; };
+		B767329F19205EE70099F302 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B76C6E1C1924AA8B001E2DF1 /* Data.car */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Data.car; sourceTree = "<group>"; };
+		B7BA32BF19208B3E00096BD9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B7BA32C019208B3E00096BD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B767325D19205DB30099F302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76732A019205EE70099F302 /* AVFoundation.framework in Frameworks */,
+				B767326419205DB30099F302 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B767327E19205DB40099F302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B767328419205DB40099F302 /* Cocoa.framework in Frameworks */,
+				B767328319205DB40099F302 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B767325719205DB30099F302 = {
+			isa = PBXGroup;
+			children = (
+				B7BA32BF19208B3E00096BD9 /* LICENSE */,
+				B7BA32C019208B3E00096BD9 /* README.md */,
+				B767326919205DB30099F302 /* Metarminator */,
+				B767328719205DB40099F302 /* MetarminatorTests */,
+				B767326219205DB30099F302 /* Frameworks */,
+				B767326119205DB30099F302 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B767326119205DB30099F302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B767326019205DB30099F302 /* Metarminator.app */,
+				B767328119205DB40099F302 /* MetarminatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B767326219205DB30099F302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B767329F19205EE70099F302 /* AVFoundation.framework */,
+				B767326319205DB30099F302 /* Cocoa.framework */,
+				B767328219205DB40099F302 /* XCTest.framework */,
+				B767326519205DB30099F302 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B767326519205DB30099F302 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B767326619205DB30099F302 /* AppKit.framework */,
+				B767326719205DB30099F302 /* CoreData.framework */,
+				B767326819205DB30099F302 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B767326919205DB30099F302 /* Metarminator */ = {
+			isa = PBXGroup;
+			children = (
+				B767327519205DB30099F302 /* MetarminatorAppDelegate.h */,
+				B767327619205DB30099F302 /* MetarminatorAppDelegate.m */,
+				B767327819205DB40099F302 /* MainMenu.xib */,
+				B767327B19205DB40099F302 /* Images.xcassets */,
+				B767326A19205DB30099F302 /* Supporting Files */,
+			);
+			path = Metarminator;
+			sourceTree = "<group>";
+		};
+		B767326A19205DB30099F302 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B76C6E1B1924AA8B001E2DF1 /* Resources */,
+				B767329819205E2B0099F302 /* Appicon.icns */,
+				B767326B19205DB30099F302 /* Metarminator-Info.plist */,
+				B767326C19205DB30099F302 /* InfoPlist.strings */,
+				B767326F19205DB30099F302 /* main.m */,
+				B767327119205DB30099F302 /* Metarminator-Prefix.pch */,
+				B767327219205DB30099F302 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B767328719205DB40099F302 /* MetarminatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B767328D19205DB40099F302 /* MetarminatorTests.m */,
+				B767328819205DB40099F302 /* Supporting Files */,
+			);
+			path = MetarminatorTests;
+			sourceTree = "<group>";
+		};
+		B767328819205DB40099F302 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B767328919205DB40099F302 /* MetarminatorTests-Info.plist */,
+				B767328A19205DB40099F302 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B76C6E1B1924AA8B001E2DF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B76C6E1C1924AA8B001E2DF1 /* Data.car */,
+				B751C4E51925B11400EEDD44 /* Image.car */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B767325F19205DB30099F302 /* Metarminator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B767329119205DB40099F302 /* Build configuration list for PBXNativeTarget "Metarminator" */;
+			buildPhases = (
+				B767329719205DE30099F302 /* ShellScript */,
+				B767325C19205DB30099F302 /* Sources */,
+				B767325D19205DB30099F302 /* Frameworks */,
+				B7B29C9319225BD700CA1FF8 /* CopyFiles */,
+				B767325E19205DB30099F302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Metarminator;
+			productName = Metarminator;
+			productReference = B767326019205DB30099F302 /* Metarminator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B767328019205DB40099F302 /* MetarminatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B767329419205DB40099F302 /* Build configuration list for PBXNativeTarget "MetarminatorTests" */;
+			buildPhases = (
+				B767327D19205DB40099F302 /* Sources */,
+				B767327E19205DB40099F302 /* Frameworks */,
+				B767327F19205DB40099F302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B767328619205DB40099F302 /* PBXTargetDependency */,
+			);
+			name = MetarminatorTests;
+			productName = MetarminatorTests;
+			productReference = B767328119205DB40099F302 /* MetarminatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B767325819205DB30099F302 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Metarminator;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Cai, Zhi-Wei";
+				TargetAttributes = {
+					B767325F19205DB30099F302 = {
+						DevelopmentTeam = KD833W48X7;
+					};
+					B767328019205DB40099F302 = {
+						TestTargetID = B767325F19205DB30099F302;
+					};
+				};
+			};
+			buildConfigurationList = B767325B19205DB30099F302 /* Build configuration list for PBXProject "Metarminator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B767325719205DB30099F302;
+			productRefGroup = B767326119205DB30099F302 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B767325F19205DB30099F302 /* Metarminator */,
+				B767328019205DB40099F302 /* MetarminatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B767325E19205DB30099F302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B751C4E61925B11400EEDD44 /* Image.car in Resources */,
+				B767326E19205DB30099F302 /* InfoPlist.strings in Resources */,
+				B767327C19205DB40099F302 /* Images.xcassets in Resources */,
+				B7BA32C119208B3F00096BD9 /* LICENSE in Resources */,
+				B767329919205E2B0099F302 /* Appicon.icns in Resources */,
+				B7BA32C219208B3F00096BD9 /* README.md in Resources */,
+				B767327419205DB30099F302 /* Credits.rtf in Resources */,
+				B76C6E1D1924AA8B001E2DF1 /* Data.car in Resources */,
+				B767327A19205DB40099F302 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B767327F19205DB40099F302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B767328C19205DB40099F302 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B767329719205DE30099F302 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(TZ=UTC date \"+%Y%m%d%H%M%S\")\necho \"$buildNumber\"\ndefaults write $PRODUCT_SETTINGS_PATH CFBundleVersion $buildNumber";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B767325C19205DB30099F302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B767327019205DB30099F302 /* main.m in Sources */,
+				B767327719205DB30099F302 /* MetarminatorAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B767327D19205DB40099F302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B767328E19205DB40099F302 /* MetarminatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B767328619205DB40099F302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B767325F19205DB30099F302 /* Metarminator */;
+			targetProxy = B767328519205DB40099F302 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B767326C19205DB30099F302 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B767326D19205DB30099F302 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B767327219205DB30099F302 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B767327319205DB30099F302 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B767327819205DB40099F302 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B767327919205DB40099F302 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B767328A19205DB40099F302 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B767328B19205DB40099F302 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B767328F19205DB40099F302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B767329019205DB40099F302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B767329219205DB40099F302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Metarminator/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metarminator/Metarminator-Prefix.pch";
+				INFOPLIST_FILE = "Metarminator/Metarminator-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_CFLAGS = "-DDEBUG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B767329319205DB40099F302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Metarminator/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metarminator/Metarminator-Prefix.pch";
+				INFOPLIST_FILE = "Metarminator/Metarminator-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B767329519205DB40099F302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Metarminator.app/Contents/MacOS/Metarminator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metarminator/Metarminator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MetarminatorTests/MetarminatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B767329619205DB40099F302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Metarminator.app/Contents/MacOS/Metarminator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metarminator/Metarminator-Prefix.pch";
+				INFOPLIST_FILE = "MetarminatorTests/MetarminatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B767325B19205DB30099F302 /* Build configuration list for PBXProject "Metarminator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B767328F19205DB40099F302 /* Debug */,
+				B767329019205DB40099F302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B767329119205DB40099F302 /* Build configuration list for PBXNativeTarget "Metarminator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B767329219205DB40099F302 /* Debug */,
+				B767329319205DB40099F302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B767329419205DB40099F302 /* Build configuration list for PBXNativeTarget "MetarminatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B767329519205DB40099F302 /* Debug */,
+				B767329619205DB40099F302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B767325819205DB30099F302 /* Project object */;
+}
