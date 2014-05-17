@@ -46,7 +46,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self checkUpdateWithFeedback:YES];
+    [self checkUpdateWithFeedback:NO];
     
 }
 
