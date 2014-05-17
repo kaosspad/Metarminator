@@ -46,7 +46,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self checkUpdateWithFeedback:NO];
+    [self checkUpdateWithFeedback:YES];
     
 }
 
@@ -110,9 +110,7 @@ void writeDataToURLWithHEXAndCapacity(NSData *theData, NSURL *theURL, NSString *
         }
         [data setData:theData];
         [data resetBytesInRange:NSMakeRange(len, theCapacity-len)];
-#ifdef DEBUG
-        NSLog(@"writeDataToURLWithHEXAndCapacity = %@", data);
-#endif
+
         file = [NSFileHandle fileHandleForWritingToURL:theURL error:nil];
         [file seekToFileOffset:offset+theHEX.length/2];
         [file writeData:data];
@@ -188,12 +186,24 @@ NSData *readDataFromURLWithHEXAndCapacity(NSURL *theURL, NSString *theHEX, NSUIn
         
         switch (session.status) {
             case AVAssetExportSessionStatusFailed:
+#ifdef DEBUG
+                NSLog(@"Export Status %@", session.error);
+#endif
                 break;
             case AVAssetExportSessionStatusCancelled:
+#ifdef DEBUG
+                NSLog(@"Export canceled");
+#endif
                 break;
             case AVAssetExportSessionStatusExporting:
+#ifdef DEBUG
+                NSLog(@"Export Exporting");
+#endif
                 break;
             case AVAssetExportSessionStatusCompleted:
+#ifdef DEBUG
+                NSLog(@"Export completed");
+#endif
                 result = YES;
                 break;
             default:
@@ -205,12 +215,18 @@ NSData *readDataFromURLWithHEXAndCapacity(NSURL *theURL, NSString *theHEX, NSUIn
             NSFileManager *fm = [NSFileManager defaultManager];
             if ([fm fileExistsAtPath:theURL.path]) {
                 [fm removeItemAtPath:theURL.path error:&err];
+#ifdef DEBUG
+                NSLog(@"Removing file: %@", err);
+#endif
             }
             err = nil;
             [fm moveItemAtURL:exportUrl toURL:theURL error:&err];
             if (err) {
                 result = NO;
             }
+#ifdef DEBUG
+            NSLog(@"Moving file: %@", err);
+#endif
         }
         
 		dispatch_semaphore_signal(semaphore);
@@ -335,6 +351,7 @@ NSString *stringForOSType(OSType theOSType)
     NSImage *sourceImage = theImage;
     [sourceImage setScalesWhenResized:YES];
     
+    // Report an error if the source isn't a valid image
     if (![sourceImage isValid]){
 #ifdef DEBUG
         NSLog(@"Invalid Image");
@@ -484,6 +501,7 @@ NSString *stringForOSType(OSType theOSType)
             NSUInteger i;
             NSData *d;
             g_Covers                              = [NSMutableArray arrayWithArray:coverArrayWithURL(g_FileURL)];
+
             NSImage *c = [[NSImage alloc] initWithData:g_FileMetaDict[@"covr"]];
             if (c) {
                 ui_i_Artwork.image = ui_a_Artwork.image = c;
@@ -535,10 +553,10 @@ NSString *stringForOSType(OSType theOSType)
             ui_s_Gapless.state                    = [g_FileMetaDict[@"pgap"] boolValue];
 
             ui_p_Podcast.state                    = [g_FileMetaDict[@"pcst"] boolValue];
-            ui_p_PodcastURL.stringValue           = (s = g_FileMetaDict[@"purl"]) ? s : @"";
+            ui_p_PodcastURL.stringValue           = (s = g_FileMetaDict[@"purl"]) ? s : @""; // ?
             ui_p_PodcastCategory.stringValue      = (s = g_FileMetaDict[@"catg"]) ? s : @"";
             ui_p_PodcastKeywords.stringValue      = (s = g_FileMetaDict[@"keyw"]) ? s : @"";
-            ui_p_PodcastGUID.stringValue          = (s = g_FileMetaDict[@"egid"]) ? s : @"";
+            ui_p_PodcastGUID.stringValue          = (s = g_FileMetaDict[@"egid"]) ? s : @""; // ?
 
             ui_l_Lyrics.string                    = (s = g_FileMetaDict[@"©lyr"]) ? s : @"";
 
@@ -685,6 +703,9 @@ NSString *stringForOSType(OSType theOSType)
     NSString *theFileType;
     [g_FileURL getResourceValue:&theFileType forKey:NSURLTypeIdentifierKey error:nil];
     if ([[NSFileManager defaultManager] isWritableFileAtPath:g_FileURL.path]) {
+#ifdef DEBUG
+        NSLog(@"Save: %@", g_FileURL.path);
+#endif
         if (ui_cs_PurchaseBy.state) [self writePurchaseByToURL:g_FileURL withName:[NSString stringWithString:ui_c_PurchaseBy.stringValue]];
         if (ui_cs_UserID.state) [self writeUserIDToURL:g_FileURL withID:[[NSString stringWithString:ui_c_UserID.stringValue] integerValue]];
         if (ui_cs_AACType.state) [self writeAACTypeToURL:g_FileURL withType:ui_c_AACType.selectedTag];
@@ -1398,12 +1419,14 @@ NSString *stringForOSType(OSType theOSType)
 - (void)soundHandler:(BOOL)isUser
 {
     if ([g_Sound isPlaying]) {
+        //ui_m_Play.title = @"Play";
         ui_m_Play.state = NSOffState;
         [g_Sound stop];
     } else {
         if ([g_FileURL checkResourceIsReachableAndReturnError:nil]) {
             g_Sound = [[NSSound alloc] initWithContentsOfURL:g_FileURL byReference:NO];
             if (isUser) {
+                //ui_m_Play.title = @"Stop";
                 ui_m_Play.state = NSOnState;
                 [g_Sound play];
             }
@@ -1793,7 +1816,24 @@ NSString *stringForOSType(OSType theOSType)
 
 - (IBAction)getSupport:(id)sender
 {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:CONST_SUPPORT_URL]];
+    NSString *url;
+    NSUInteger tag;
+    if ([sender isKindOfClass:[NSMenuItem class]]) {
+        NSMenuItem *s = (NSMenuItem *)sender;
+        tag = s.tag;
+    } else if ([sender isKindOfClass:[NSButton class]]) {
+        NSButton *s = (NSButton *)sender;
+        tag = s.tag;
+    }
+    switch (tag) {
+        case 1:
+            url = CONST_DEVELOPER_URL;
+            break;
+        default:
+            url = CONST_SUPPORT_URL;
+            break;
+    }
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
 }
 
 @end

@@ -243,9 +243,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Cai, Zhi-Wei";
 				TargetAttributes = {
-					B767325F19205DB30099F302 = {
-						DevelopmentTeam = KD833W48X7;
-					};
 					B767328019205DB40099F302 = {
 						TestTargetID = B767325F19205DB30099F302;
 					};
@@ -450,7 +447,7 @@
 		B767329219205DB40099F302 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = Cai;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +467,7 @@
 		B767329319205DB40099F302 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = Cai;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

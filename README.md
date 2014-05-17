@@ -25,6 +25,9 @@ Bug report? Please do it [here](https://github.com/x43x61x69/Metarminator/issues
 Changelog
 ---------
 
+v0.2:
+* Bug fix - Codesign issue.
+
 v0.1.1:
 * Bug fix - Silents on launch update check.
 
