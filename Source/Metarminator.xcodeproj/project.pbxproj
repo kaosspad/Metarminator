@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B751C4E61925B11400EEDD44 /* Image.car in Resources */ = {isa = PBXBuildFile; fileRef = B751C4E51925B11400EEDD44 /* Image.car */; };
+		B751C589192983D500BB9B83 /* NSDropWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B751C588192983D500BB9B83 /* NSDropWindow.m */; };
 		B767326419205DB30099F302 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767326319205DB30099F302 /* Cocoa.framework */; };
 		B767326E19205DB30099F302 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B767326C19205DB30099F302 /* InfoPlist.strings */; };
 		B767327019205DB30099F302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B767326F19205DB30099F302 /* main.m */; };
@@ -50,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		B751C4E51925B11400EEDD44 /* Image.car */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Image.car; sourceTree = "<group>"; };
+		B751C587192983D500BB9B83 /* NSDropWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDropWindow.h; path = Classes/NSDropWindow.h; sourceTree = "<group>"; };
+		B751C588192983D500BB9B83 /* NSDropWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDropWindow.m; path = Classes/NSDropWindow.m; sourceTree = "<group>"; };
 		B767326019205DB30099F302 /* Metarminator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metarminator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B767326319205DB30099F302 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B767326619205DB30099F302 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B751C58A192983E200BB9B83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B751C587192983D500BB9B83 /* NSDropWindow.h */,
+				B751C588192983D500BB9B83 /* NSDropWindow.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		B767325719205DB30099F302 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +155,7 @@
 		B767326919205DB30099F302 /* Metarminator */ = {
 			isa = PBXGroup;
 			children = (
+				B751C58A192983E200BB9B83 /* Classes */,
 				B767327519205DB30099F302 /* MetarminatorAppDelegate.h */,
 				B767327619205DB30099F302 /* MetarminatorAppDelegate.m */,
 				B767327819205DB40099F302 /* MainMenu.xib */,
@@ -317,6 +330,7 @@
 			files = (
 				B767327019205DB30099F302 /* main.m in Sources */,
 				B767327719205DB30099F302 /* MetarminatorAppDelegate.m in Sources */,
+				B751C589192983D500BB9B83 /* NSDropWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

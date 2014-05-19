@@ -36,6 +36,10 @@ Q & A
 
 **A:** Currently, Metarminator supports those formats that are iTunes Metadata compatible: **MP4**, **M4A**, **M4P**, **M4V** and **M4B**.
 
+**Q: Can I add files by drag and drop?**
+
+**A:** Sure. Simply drag and drop them to the main window or the dock icon.
+
 **Q: Why MP3s are not supported?**
 
 **A:** While they are lots of tools out there can edit ID3 tags, there are only few that does iTunes Metadata. This tool was created to help people get the ability to view, edit or remove the info they wish. As MP3s is **not iTunes Metadata compatible** (it use **ID3**), it's not supported by Metarminator yet.
@@ -86,6 +90,11 @@ A: Apple currently has 5 types of AACs, they can either be:
 
 Changelog
 ---------
+
+**v0.2.3:**
+
+* New feaure - Drag'n drop the files to the main window or dock icon adds files to the queue.
+* Bug fix - Fix crash when trying to write track/disc data while original does not exist.
 
 **v0.2.2:**
 

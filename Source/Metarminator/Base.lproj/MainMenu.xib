@@ -98,6 +98,7 @@
                 <outlet property="ui_m_SaveAll" destination="rXp-EX-dde" id="u5Q-rT-4ah"/>
                 <outlet property="ui_m_Window" destination="QvC-M9-y7g" id="bPR-ZA-x8F"/>
                 <outlet property="ui_mm_Add" destination="jbR-SW-qfI" id="Sn9-af-7Dg"/>
+                <outlet property="ui_mm_New" destination="Was-JA-tGl" id="yuH-GO-rNc"/>
                 <outlet property="ui_mm_Remove" destination="iqI-pa-b4J" id="Ptf-JW-AJK"/>
                 <outlet property="ui_mm_Save" destination="pxx-59-PXV" id="jbq-Zg-2mm"/>
                 <outlet property="ui_mm_SaveAll" destination="wDP-Rg-qrP" id="dij-fX-Z9u"/>
@@ -218,7 +219,6 @@
                                 </connections>
                             </menuItem>
                             <menuItem title="Add…" keyEquivalent="o" id="IAo-SY-fd9"/>
-                            <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
                             <menuItem title="Remove" keyEquivalent="r" id="Viv-Mx-7BM">
                                 <connections>
                                     <action selector="removeFile:" target="Voe-Tx-rLC" id="DJc-tU-Li9"/>
@@ -334,7 +334,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Metarminator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Metarminator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="NSDropWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="554"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1130"/>
@@ -349,7 +349,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <tabViewItems>
                             <tabViewItem label="Info" identifier="1" id="N7j-Pg-UAl">
-                                <view key="view" wantsLayer="YES" ambiguous="YES" id="Wtf-Ss-H46">
+                                <view key="view" ambiguous="YES" id="Wtf-Ss-H46">
                                     <rect key="frame" x="10" y="25" width="325" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -771,9 +771,6 @@
                                         <button toolTip="Click to play/stop preview audio" verticalHuggingPriority="750" fixedFrame="YES" alphaValue="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="9o7-91-nz4">
                                             <rect key="frame" x="357" y="-69" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <shadow key="shadow">
-                                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            </shadow>
                                             <buttonCell key="cell" type="bevel" bezelStyle="circular" image="NSGoRightTemplate" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="cGO-a8-BiA">
                                                 <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="smallSystem"/>
@@ -1353,7 +1350,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="trE-6m-2Mh">
-                                                <rect key="frame" x="1" y="1" width="15" height="0.0"/>
+                                                <rect key="frame" x="369" y="1" width="15" height="369"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -1869,7 +1866,7 @@
                     <button toolTip="Show saving filter" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Btg-jW-0su">
                         <rect key="frame" x="435" y="21" width="29" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" image="39517AD4-1DC0-4948-BC94-3329C65B7DF0" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ohi-YL-Un1">
+                        <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" image="32CED4EC-93AD-47F5-ACDC-279A50F166A5" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ohi-YL-Un1">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -2490,7 +2487,7 @@
         <userDefaultsController representsSharedInstance="YES" id="E2a-hV-x2o"/>
     </objects>
     <resources>
-        <image name="39517AD4-1DC0-4948-BC94-3329C65B7DF0" width="1" height="1">
+        <image name="32CED4EC-93AD-47F5-ACDC-279A50F166A5" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

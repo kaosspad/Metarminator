@@ -21,7 +21,7 @@
 #pragma mark - Define Consts
 
 #define CONST_DEVELOPER_URL       @"http://reversi.ng"
-#define CONST_RELEASE_NOTE_URL    @"https://github.com/x43x61x69/Metarminator"
+#define CONST_RELEASE_NOTE_URL    @"https://github.com/x43x61x69/Metarminator#changelog"
 #define CONST_SUPPORT_URL         @"https://github.com/x43x61x69/Metarminator/issues"
 #define CONST_UPDATE_CHECK_URL    @"https://raw.githubusercontent.com/x43x61x69/Metarminator/master/Source/Metarminator/Metarminator-Info.plist"
 #define CONST_UPDATE_DOWNLOAD_URL @"https://github.com/x43x61x69/Metarminator/raw/master/Release/Metarminator.zip"
@@ -34,10 +34,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MetarminatorAppDelegate : NSObject <NSApplicationDelegate> {
+@interface MetarminatorAppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate> {
     NSURL               * g_FileURL;
-    NSMutableDictionary * g_FileMetaDict;
     NSMutableArray      * g_FileURLs;
+    NSMutableDictionary * g_FileMetaDict;
     NSMutableArray      * g_Covers;
     NSSound             * g_Sound;
     NSImage             * g_NoCover;
@@ -58,6 +58,7 @@
 @property (assign) IBOutlet NSPopUpButton       *ui_m_Queue;
 @property (assign) IBOutlet NSProgressIndicator *ui_m_Indicator;
 
+@property (assign) IBOutlet NSMenuItem          *ui_mm_New;
 @property (assign) IBOutlet NSMenuItem          *ui_mm_Add;
 @property (assign) IBOutlet NSMenuItem          *ui_mm_Save;
 @property (assign) IBOutlet NSMenuItem          *ui_mm_SaveAll;
@@ -240,5 +241,9 @@
 - (IBAction)update:(id)sender;
 - (IBAction)getSupport:(id)sender;
 - (IBAction)developerWebsite:(id)sender;
+
+#pragma mark - Non-UI Methods
+
+- (void)openProcess:(NSArray *)theArray;
 
 @end

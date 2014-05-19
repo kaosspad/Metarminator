@@ -27,7 +27,7 @@
 
 #pragma mark - Synthesize
 
-@synthesize ui_m_Window, ui_m_DrawerOptions, ui_m_New, ui_m_Save, ui_m_SaveAll, ui_m_Remove, ui_m_Drawer, ui_m_Play, ui_m_Edit, ui_m_Queue, ui_m_Indicator, ui_mm_Add, ui_mm_Save, ui_mm_SaveAll, ui_mm_SaveAs, ui_mm_Remove, ui_m_ExportView ,ui_m_ExportType, ui_m_ExportQuality, ui_m_ExportQualityValue, ui_m_MultipleSavingView, ui_m_MultipleSavingCheckbox, ui_m_PermanentRemovingView, ui_m_PermanentRemovingText, ui_m_PermanentRemovingCheckbox, ui_is_Name, ui_is_Artist, ui_is_AlbumArtist, ui_is_Album, ui_is_Grouping, ui_is_Composer, ui_is_Comments, ui_is_Genre, ui_is_GenreID, ui_is_Year, ui_is_TrackNumberFirst, ui_is_TrackNumberLast, ui_is_DiscNumberFirst, ui_is_DiscNumberLast, ui_is_BPM, ui_is_PartOfACompilation, ui_is_Advisory, ui_ss_Name, ui_ss_Artist, ui_ss_AlbumArtist, ui_ss_Album, ui_ss_Composer, ui_ss_Show, ui_ss_Encoder, ui_ss_EncodedBy, ui_ss_VideoDescription, ui_ss_VideoLongDescription, ui_ss_VideoNetwork, ui_ss_VideoShow, ui_ss_VideoEpisodeID, ui_ss_VideoSeasonNumber, ui_ss_VideoEpisodeNumber, ui_ss_MediaType, ui_ss_HDVideo, ui_ss_Gapless, ui_ps_PodcastURL, ui_ps_PodcastGUID, ui_ps_Podcast, ui_ps_PodcastKeywords, ui_ps_PodcastCategory, ui_ls_Lyrics, ui_as_Artwork, ui_cs_Copyright, ui_cs_PurchaseBy, ui_cs_PurchaseDate, ui_cs_AppleID, ui_cs_AccountType, ui_cs_iTunesCatalogID, ui_cs_StoreID, ui_cs_Description, ui_cs_ISRC, ui_cs_UserID, ui_cs_AACType, ui_i_Artwork, ui_i_Name, ui_i_Artist, ui_i_AlbumArtist, ui_i_Album, ui_i_Grouping, ui_i_Composer, ui_i_Comments, ui_i_Genre, ui_i_GenreID, ui_i_Year, ui_i_TrackNumberFirst, ui_i_TrackNumberLast, ui_i_DiscNumberFirst, ui_i_DiscNumberLast, ui_i_BPM, ui_i_PartOfACompilation, ui_i_Advisory, ui_s_Name, ui_s_Artist, ui_s_AlbumArtist, ui_s_Album, ui_s_Composer, ui_s_Show, ui_s_Encoder, ui_s_EncodedBy, ui_s_VideoDescription, ui_s_VideoLongDescription, ui_s_VideoNetwork, ui_s_VideoShow, ui_s_VideoEpisodeID, ui_s_VideoSeasonNumber, ui_s_VideoEpisodeNumber, ui_s_MediaType, ui_s_HDVideo, ui_s_Gapless, ui_p_PodcastURL, ui_p_PodcastGUID, ui_p_Podcast, ui_p_PodcastKeywords, ui_p_PodcastCategory, ui_l_Lyrics, ui_a_Artwork, ui_a_ArtworkScale, ui_a_Stepper, ui_a_Info, ui_c_Copyright, ui_c_PurchaseBy, ui_c_PurchaseDate, ui_c_AppleID, ui_c_AccountType, ui_c_iTunesCatalogID, ui_c_StoreID, ui_c_Description, ui_c_ISRC, ui_c_UserID, ui_c_AACType;
+@synthesize ui_m_Window, ui_m_DrawerOptions, ui_m_New, ui_m_Save, ui_m_SaveAll, ui_m_Remove, ui_m_Drawer, ui_m_Play, ui_m_Edit, ui_m_Queue, ui_m_Indicator, ui_mm_New, ui_mm_Add, ui_mm_Save, ui_mm_SaveAll, ui_mm_SaveAs, ui_mm_Remove, ui_m_ExportView ,ui_m_ExportType, ui_m_ExportQuality, ui_m_ExportQualityValue, ui_m_MultipleSavingView, ui_m_MultipleSavingCheckbox, ui_m_PermanentRemovingView, ui_m_PermanentRemovingText, ui_m_PermanentRemovingCheckbox, ui_is_Name, ui_is_Artist, ui_is_AlbumArtist, ui_is_Album, ui_is_Grouping, ui_is_Composer, ui_is_Comments, ui_is_Genre, ui_is_GenreID, ui_is_Year, ui_is_TrackNumberFirst, ui_is_TrackNumberLast, ui_is_DiscNumberFirst, ui_is_DiscNumberLast, ui_is_BPM, ui_is_PartOfACompilation, ui_is_Advisory, ui_ss_Name, ui_ss_Artist, ui_ss_AlbumArtist, ui_ss_Album, ui_ss_Composer, ui_ss_Show, ui_ss_Encoder, ui_ss_EncodedBy, ui_ss_VideoDescription, ui_ss_VideoLongDescription, ui_ss_VideoNetwork, ui_ss_VideoShow, ui_ss_VideoEpisodeID, ui_ss_VideoSeasonNumber, ui_ss_VideoEpisodeNumber, ui_ss_MediaType, ui_ss_HDVideo, ui_ss_Gapless, ui_ps_PodcastURL, ui_ps_PodcastGUID, ui_ps_Podcast, ui_ps_PodcastKeywords, ui_ps_PodcastCategory, ui_ls_Lyrics, ui_as_Artwork, ui_cs_Copyright, ui_cs_PurchaseBy, ui_cs_PurchaseDate, ui_cs_AppleID, ui_cs_AccountType, ui_cs_iTunesCatalogID, ui_cs_StoreID, ui_cs_Description, ui_cs_ISRC, ui_cs_UserID, ui_cs_AACType, ui_i_Artwork, ui_i_Name, ui_i_Artist, ui_i_AlbumArtist, ui_i_Album, ui_i_Grouping, ui_i_Composer, ui_i_Comments, ui_i_Genre, ui_i_GenreID, ui_i_Year, ui_i_TrackNumberFirst, ui_i_TrackNumberLast, ui_i_DiscNumberFirst, ui_i_DiscNumberLast, ui_i_BPM, ui_i_PartOfACompilation, ui_i_Advisory, ui_s_Name, ui_s_Artist, ui_s_AlbumArtist, ui_s_Album, ui_s_Composer, ui_s_Show, ui_s_Encoder, ui_s_EncodedBy, ui_s_VideoDescription, ui_s_VideoLongDescription, ui_s_VideoNetwork, ui_s_VideoShow, ui_s_VideoEpisodeID, ui_s_VideoSeasonNumber, ui_s_VideoEpisodeNumber, ui_s_MediaType, ui_s_HDVideo, ui_s_Gapless, ui_p_PodcastURL, ui_p_PodcastGUID, ui_p_Podcast, ui_p_PodcastKeywords, ui_p_PodcastCategory, ui_l_Lyrics, ui_a_Artwork, ui_a_ArtworkScale, ui_a_Stepper, ui_a_Info, ui_c_Copyright, ui_c_PurchaseBy, ui_c_PurchaseDate, ui_c_AppleID, ui_c_AccountType, ui_c_iTunesCatalogID, ui_c_StoreID, ui_c_Description, ui_c_ISRC, ui_c_UserID, ui_c_AACType;
 
 #pragma mark - System Methods
 
@@ -42,17 +42,37 @@
     }
     [self optionsDrawerCalibrate];
     [self UICalibrate];
+    
+    // Push things via Notification Center.
+    [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self checkUpdateWithFeedback:NO];
+    [self performSelectorInBackground:@selector(checkUpdateWithFeedback:) withObject:[NSNumber numberWithBool:NO]];
     
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication
 {
     return YES;
+}
+
+- (void)application:(NSApplication *)theApplication openFiles:(NSArray *)filenames
+{
+    NSMutableArray *files        = [[NSMutableArray alloc] initWithCapacity:filenames.count];
+    
+    for (NSString *path in filenames) {
+            [files addObject:[NSURL fileURLWithPath:path]];
+    }
+    
+#ifdef DEBUG
+    NSLog(@"Dragged in files = %@", files);
+#endif
+    
+    if (files.count) {
+        [self performSelectorInBackground:@selector(openProcess:) withObject:files];
+    }
 }
 
 #pragma mark - Non-UI Functions
@@ -654,6 +674,50 @@ NSString *stringForOSType(OSType theOSType)
     
 }
 
+- (void)openProcess:(NSArray *)theArray
+{
+    [ui_m_Indicator startAnimation:nil];
+    NSMutableArray *unique     = [[NSMutableArray alloc] initWithArray:g_FileURLs];
+    NSMutableArray *uniqueSort = [[NSMutableArray alloc] init];
+    g_FileURLs                 = [[NSMutableArray alloc] init];
+    
+    [unique addObjectsFromArray:theArray];
+    [g_FileURLs removeAllObjects];
+    while (unique.count) {
+        id obj = [unique objectAtIndex:0];
+        [g_FileURLs addObject:obj];
+        [uniqueSort addObject:[obj path]];
+        [unique removeObject:obj];
+    }
+    
+    [uniqueSort sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    [ui_m_Queue removeAllItems];
+    
+    for (NSString *String in uniqueSort) {
+        [ui_m_Queue addItemWithTitle:String];
+    }
+    
+    [ui_m_Queue selectItemWithTitle:[g_FileURLs.lastObject path]];
+    g_FileURL = [g_FileURLs lastObject];
+    
+#ifdef DEBUG
+    NSLog(@"Current files = %@", g_FileURLs);
+#endif
+    
+    [self UICalibrate];
+    [self switchFile];
+    [ui_m_Indicator stopAnimation:nil];
+    
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.title = [self applicationName];
+    notification.subtitle = @"File Added.";
+    notification.informativeText = [NSString stringWithFormat:@"%lu files added to queue.",
+                                    g_FileURLs.count];
+    notification.soundName = NSUserNotificationDefaultSoundName;
+    
+    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+}
+
 - (void)open:(BOOL)shouldClean
 {
     NSOpenPanel *panel = [NSOpenPanel openPanel];
@@ -667,32 +731,7 @@ NSString *stringForOSType(OSType theOSType)
                 [g_FileURLs removeAllObjects];
                 [self resetFields];
             }
-            NSMutableArray *unique     = [[NSMutableArray alloc] initWithArray:g_FileURLs];
-            NSMutableArray *uniqueSort = [[NSMutableArray alloc] init];
-            g_FileURLs                 = [[NSMutableArray alloc] init];
-            
-            [unique addObjectsFromArray:[panel URLs]];
-            [g_FileURLs removeAllObjects];
-            
-            while (unique.count) {
-                id obj = [unique objectAtIndex:0];
-                [g_FileURLs addObject:obj];
-                [uniqueSort addObject:[obj path]];
-                [unique removeObject:obj];
-            }
-            
-            [uniqueSort sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-            [ui_m_Queue removeAllItems];
-            
-            for (NSString *String in uniqueSort) {
-                [ui_m_Queue addItemWithTitle:String];
-            }
-            
-            [ui_m_Queue selectItemWithTitle:[g_FileURLs.lastObject path]];
-            g_FileURL = [g_FileURLs lastObject];
-            
-            [self UICalibrate];
-            [self switchFile];
+            [self performSelectorInBackground:@selector(openProcess:) withObject:[panel URLs]];
         }
     }];
 }
@@ -814,16 +853,16 @@ NSString *stringForOSType(OSType theOSType)
         if ( ui_is_TrackNumberFirst.state || ui_is_TrackNumberLast.state ) {
             d = g_FileMetaDict[@"trkn"];
             s = [NSString stringWithFormat:@"%08x%04x",
-                 (ui_is_TrackNumberFirst.state) ? [ui_i_TrackNumberFirst.stringValue intValue] % 0xFFFF : [intgerStringForDataWithRange(d, 0, 4) intValue],
-                 (ui_is_TrackNumberLast.state) ? [ui_i_TrackNumberLast.stringValue intValue] % 0xFFFF : [intgerStringForDataWithRange(d, 4, 2) intValue]];
+                 (ui_is_TrackNumberFirst.state) ? [ui_i_TrackNumberFirst.stringValue intValue] % 0xFFFF : (d) ? [intgerStringForDataWithRange(d, 0, 4) intValue] : 0,
+                 (ui_is_TrackNumberLast.state) ? [ui_i_TrackNumberLast.stringValue intValue] % 0xFFFF :  (d) ? [intgerStringForDataWithRange(d, 4, 2) intValue] : 0];
             [g_FileMetaDict setObject:dataFromHEXString(s) forKey:@"trkn"];
         }
         
         if ( ui_is_DiscNumberFirst.state || ui_is_DiscNumberLast.state ) {
             d = g_FileMetaDict[@"disk"];
             s = [NSString stringWithFormat:@"%08x%04x",
-                 (ui_is_DiscNumberFirst.state) ? [ui_i_DiscNumberFirst.stringValue intValue] % 0xFFFF : [intgerStringForDataWithRange(d, 0, 4) intValue],
-                 (ui_is_DiscNumberLast.state) ? [ui_i_DiscNumberLast.stringValue intValue] % 0xFFFF : [intgerStringForDataWithRange(d, 4, 2) intValue]];
+                 (ui_is_DiscNumberFirst.state) ? [ui_i_DiscNumberFirst.stringValue intValue] % 0xFFFF : (d) ? [intgerStringForDataWithRange(d, 0, 4) intValue] : 0,
+                 (ui_is_DiscNumberLast.state) ? [ui_i_DiscNumberLast.stringValue intValue] % 0xFFFF : (d) ? [intgerStringForDataWithRange(d, 4, 2) intValue] : 0];
             [g_FileMetaDict setObject:dataFromHEXString(s) forKey:@"disk"];
         }
         
@@ -1531,6 +1570,23 @@ NSString *stringForOSType(OSType theOSType)
     [[NSUserDefaults standardUserDefaults] boolForKey:@""];
 }
 
+- (void)alertNoUpdateOnMainThread:(NSAlert *)theAlert
+{
+    [theAlert runModal];
+}
+
+- (void)alertUpdateOnMainThread:(NSAlert *)theAlert
+{
+    NSInteger returnCode = [theAlert runModal];
+    if (returnCode == 1) {
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:CONST_UPDATE_DOWNLOAD_URL]];
+    } else if (returnCode != 0) {
+        [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:CONST_RELEASE_NOTE_URL]];
+    } else {
+        // Do nothing.
+    }
+}
+
 - (void)checkUpdateWithFeedback:(BOOL)feedback
 {
     NSURL *requestResult = [NSURL URLWithString:CONST_UPDATE_CHECK_URL];
@@ -1545,7 +1601,7 @@ NSString *stringForOSType(OSType theOSType)
                                                    otherButton:nil
                                      informativeTextWithFormat:@"You are using the latest version of %@.\n", [[NSRunningApplication currentApplication] localizedName]];
                 [alert setAlertStyle:NSWarningAlertStyle];
-                [alert runModal];
+                [self performSelectorOnMainThread:@selector(alertNoUpdateOnMainThread:) withObject:alert waitUntilDone:NO];
             }
         } else {
             NSAlert *alert = [NSAlert alertWithMessageText:@"New Version Available!"
@@ -1556,14 +1612,7 @@ NSString *stringForOSType(OSType theOSType)
                               remoteCFBundleShortVersionString,
                               localCFBundleShortVersionString];
             [alert setAlertStyle:NSWarningAlertStyle];
-            NSInteger returnCode = [alert runModal];
-            if (returnCode == 1) {
-                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:CONST_UPDATE_DOWNLOAD_URL]];
-            } else if (returnCode != 0) {
-                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:CONST_RELEASE_NOTE_URL]];
-            } else {
-                // Do nothing.
-            }
+            [self performSelectorOnMainThread:@selector(alertUpdateOnMainThread:) withObject:alert waitUntilDone:NO];
         }
     }
 }
@@ -1572,7 +1621,15 @@ NSString *stringForOSType(OSType theOSType)
 
 - (IBAction)openFiles:(id)sender
 {
-    [self open:YES];
+    if (g_FileURLs.count) {
+        g_FileURL = nil;
+        [g_FileURLs removeAllObjects];
+        [ui_m_Queue removeAllItems];
+        [self resetFields];
+        [self UICalibrate];
+    } else {
+        [self open:YES];
+    }
 }
 
 - (IBAction)addFiles:(id)sender
@@ -1811,7 +1868,7 @@ NSString *stringForOSType(OSType theOSType)
 
 - (IBAction)update:(id)sender
 {
-    [self checkUpdateWithFeedback:YES];
+    [self performSelectorInBackground:@selector(checkUpdateWithFeedback:) withObject:[NSNumber numberWithBool:YES]];
 }
 
 - (IBAction)getSupport:(id)sender
