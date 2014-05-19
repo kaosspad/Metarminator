@@ -91,6 +91,10 @@ A: Apple currently has 5 types of AACs, they can either be:
 Changelog
 ---------
 
+**v0.2.4:**
+
+* Bug fix - Fix crash when trying to write track/disc data while original does not exist.
+
 **v0.2.3:**
 
 * New feaure - Drag'n drop the files to the main window or dock icon adds files to the queue.

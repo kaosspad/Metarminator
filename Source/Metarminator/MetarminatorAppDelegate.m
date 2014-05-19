@@ -311,10 +311,16 @@ NSData *dataForInteger(NSUInteger theInteger)
     return [NSData dataWithBytes:&i length:sizeof(i)];
 }
 
+NSUInteger intgerForDataWithRange(NSData *theData, NSUInteger theLocation, NSUInteger theLength)
+{
+    if (!theData) return 0;
+    NSUInteger i = *(NSInteger*)([theData subdataWithRange:NSMakeRange(theLocation, theLength)].bytes);
+    return (NSUInteger)((theLength < 4) ? EndianU16_BtoN(i) : EndianU32_BtoN(i));
+}
+
 NSString *intgerStringForDataWithRange(NSData *theData, NSUInteger theLocation, NSUInteger theLength)
 {
-    NSUInteger i = *(NSInteger*)([theData subdataWithRange:NSMakeRange(theLocation, theLength)].bytes);
-    i = (NSUInteger)((theLength < 4) ? EndianU16_BtoN(i) : EndianU32_BtoN(i));
+    NSUInteger i = intgerForDataWithRange(theData, theLocation, theLength);
     return (i) ? [NSString stringWithFormat:@"%lu", i] : @"";
 }
 
@@ -852,17 +858,17 @@ NSString *stringForOSType(OSType theOSType)
         
         if ( ui_is_TrackNumberFirst.state || ui_is_TrackNumberLast.state ) {
             d = g_FileMetaDict[@"trkn"];
-            s = [NSString stringWithFormat:@"%08x%04x",
-                 (ui_is_TrackNumberFirst.state) ? [ui_i_TrackNumberFirst.stringValue intValue] % 0xFFFF : (d) ? [intgerStringForDataWithRange(d, 0, 4) intValue] : 0,
-                 (ui_is_TrackNumberLast.state) ? [ui_i_TrackNumberLast.stringValue intValue] % 0xFFFF :  (d) ? [intgerStringForDataWithRange(d, 4, 2) intValue] : 0];
+            s = [NSString stringWithFormat:@"%08lx%04lx",
+                 (ui_is_TrackNumberFirst.state) ? [ui_i_TrackNumberFirst.stringValue intValue] % 0xFFFF : intgerForDataWithRange(d, 0, 4),
+                 (ui_is_TrackNumberLast.state) ? [ui_i_TrackNumberLast.stringValue intValue] % 0xFFFF : intgerForDataWithRange(d, 4, 2)];
             [g_FileMetaDict setObject:dataFromHEXString(s) forKey:@"trkn"];
         }
         
         if ( ui_is_DiscNumberFirst.state || ui_is_DiscNumberLast.state ) {
             d = g_FileMetaDict[@"disk"];
-            s = [NSString stringWithFormat:@"%08x%04x",
-                 (ui_is_DiscNumberFirst.state) ? [ui_i_DiscNumberFirst.stringValue intValue] % 0xFFFF : (d) ? [intgerStringForDataWithRange(d, 0, 4) intValue] : 0,
-                 (ui_is_DiscNumberLast.state) ? [ui_i_DiscNumberLast.stringValue intValue] % 0xFFFF : (d) ? [intgerStringForDataWithRange(d, 4, 2) intValue] : 0];
+            s = [NSString stringWithFormat:@"%08lx%04lx",
+                 (ui_is_DiscNumberFirst.state) ? [ui_i_DiscNumberFirst.stringValue intValue] % 0xFFFF : intgerForDataWithRange(d, 0, 4),
+                 (ui_is_DiscNumberLast.state) ? [ui_i_DiscNumberLast.stringValue intValue] % 0xFFFF : intgerForDataWithRange(d, 4, 2)];
             [g_FileMetaDict setObject:dataFromHEXString(s) forKey:@"disk"];
         }
         
