@@ -27,7 +27,7 @@
 
 #pragma mark - Synthesize
 
-@synthesize ui_m_Window, ui_m_DrawerOptions, ui_m_New, ui_m_Save, ui_m_SaveAll, ui_m_Remove, ui_m_Drawer, ui_m_Play, ui_m_Edit, ui_m_Queue, ui_m_Indicator, ui_mm_New, ui_mm_Add, ui_mm_Save, ui_mm_SaveAll, ui_mm_SaveAs, ui_mm_Remove, ui_m_ExportView ,ui_m_ExportType, ui_m_ExportQuality, ui_m_ExportQualityValue, ui_m_MultipleSavingView, ui_m_MultipleSavingCheckbox, ui_m_PermanentRemovingView, ui_m_PermanentRemovingText, ui_m_PermanentRemovingCheckbox, ui_is_Name, ui_is_Artist, ui_is_AlbumArtist, ui_is_Album, ui_is_Grouping, ui_is_Composer, ui_is_Comments, ui_is_Genre, ui_is_GenreID, ui_is_Year, ui_is_TrackNumberFirst, ui_is_TrackNumberLast, ui_is_DiscNumberFirst, ui_is_DiscNumberLast, ui_is_BPM, ui_is_PartOfACompilation, ui_is_Advisory, ui_ss_Name, ui_ss_Artist, ui_ss_AlbumArtist, ui_ss_Album, ui_ss_Composer, ui_ss_Show, ui_ss_Encoder, ui_ss_EncodedBy, ui_ss_VideoDescription, ui_ss_VideoLongDescription, ui_ss_VideoNetwork, ui_ss_VideoShow, ui_ss_VideoEpisodeID, ui_ss_VideoSeasonNumber, ui_ss_VideoEpisodeNumber, ui_ss_MediaType, ui_ss_HDVideo, ui_ss_Gapless, ui_ps_PodcastURL, ui_ps_PodcastGUID, ui_ps_Podcast, ui_ps_PodcastKeywords, ui_ps_PodcastCategory, ui_ls_Lyrics, ui_as_Artwork, ui_cs_Copyright, ui_cs_PurchaseBy, ui_cs_PurchaseDate, ui_cs_AppleID, ui_cs_AccountType, ui_cs_iTunesCatalogID, ui_cs_StoreID, ui_cs_Description, ui_cs_ISRC, ui_cs_UserID, ui_cs_AACType, ui_i_Artwork, ui_i_Name, ui_i_Artist, ui_i_AlbumArtist, ui_i_Album, ui_i_Grouping, ui_i_Composer, ui_i_Comments, ui_i_Genre, ui_i_GenreID, ui_i_Year, ui_i_TrackNumberFirst, ui_i_TrackNumberLast, ui_i_DiscNumberFirst, ui_i_DiscNumberLast, ui_i_BPM, ui_i_PartOfACompilation, ui_i_Advisory, ui_s_Name, ui_s_Artist, ui_s_AlbumArtist, ui_s_Album, ui_s_Composer, ui_s_Show, ui_s_Encoder, ui_s_EncodedBy, ui_s_VideoDescription, ui_s_VideoLongDescription, ui_s_VideoNetwork, ui_s_VideoShow, ui_s_VideoEpisodeID, ui_s_VideoSeasonNumber, ui_s_VideoEpisodeNumber, ui_s_MediaType, ui_s_HDVideo, ui_s_Gapless, ui_p_PodcastURL, ui_p_PodcastGUID, ui_p_Podcast, ui_p_PodcastKeywords, ui_p_PodcastCategory, ui_l_Lyrics, ui_a_Artwork, ui_a_ArtworkScale, ui_a_Stepper, ui_a_Info, ui_c_Copyright, ui_c_PurchaseBy, ui_c_PurchaseDate, ui_c_AppleID, ui_c_AccountType, ui_c_iTunesCatalogID, ui_c_StoreID, ui_c_Description, ui_c_ISRC, ui_c_UserID, ui_c_AACType;
+@synthesize ui_m_Window, ui_m_DrawerOptions, ui_m_New, ui_m_Save, ui_m_SaveAll, ui_m_Remove, ui_m_DeepScan, ui_m_Drawer, ui_m_Play, ui_m_Edit, ui_m_Queue, ui_m_Indicator, ui_mm_New, ui_mm_Add, ui_mm_Save, ui_mm_SaveAll, ui_mm_SaveAs, ui_mm_Remove, ui_m_UpdateOptionView, ui_m_UpdateOptionCheckbox, ui_m_ExportView ,ui_m_ExportType, ui_m_ExportQuality, ui_m_ExportQualityValue, ui_m_MultipleSavingView, ui_m_MultipleSavingCheckbox, ui_m_PermanentRemovingView, ui_m_PermanentRemovingText, ui_m_PermanentRemovingCheckbox, ui_is_Name, ui_is_Artist, ui_is_AlbumArtist, ui_is_Album, ui_is_Grouping, ui_is_Composer, ui_is_Comments, ui_is_Genre, ui_is_GenreID, ui_is_Year, ui_is_TrackNumberFirst, ui_is_TrackNumberLast, ui_is_DiscNumberFirst, ui_is_DiscNumberLast, ui_is_BPM, ui_is_PartOfACompilation, ui_is_Advisory, ui_ss_Name, ui_ss_Artist, ui_ss_AlbumArtist, ui_ss_Album, ui_ss_Composer, ui_ss_Show, ui_ss_Encoder, ui_ss_EncodedBy, ui_ss_VideoDescription, ui_ss_VideoLongDescription, ui_ss_VideoNetwork, ui_ss_VideoShow, ui_ss_VideoEpisodeID, ui_ss_VideoSeasonNumber, ui_ss_VideoEpisodeNumber, ui_ss_MediaType, ui_ss_HDVideo, ui_ss_Gapless, ui_ps_PodcastURL, ui_ps_PodcastGUID, ui_ps_Podcast, ui_ps_PodcastKeywords, ui_ps_PodcastCategory, ui_ls_Lyrics, ui_as_Artwork, ui_cs_Copyright, ui_cs_PurchaseBy, ui_cs_PurchaseDate, ui_cs_AppleID, ui_cs_AccountType, ui_cs_iTunesCatalogID, ui_cs_StoreID, ui_cs_Description, ui_cs_ISRC, ui_cs_UserID, ui_cs_AACType, ui_i_Artwork, ui_i_Name, ui_i_Artist, ui_i_AlbumArtist, ui_i_Album, ui_i_Grouping, ui_i_Composer, ui_i_Comments, ui_i_Genre, ui_i_GenreID, ui_i_Year, ui_i_TrackNumberFirst, ui_i_TrackNumberLast, ui_i_DiscNumberFirst, ui_i_DiscNumberLast, ui_i_BPM, ui_i_PartOfACompilation, ui_i_Advisory, ui_s_Name, ui_s_Artist, ui_s_AlbumArtist, ui_s_Album, ui_s_Composer, ui_s_Show, ui_s_Encoder, ui_s_EncodedBy, ui_s_VideoDescription, ui_s_VideoLongDescription, ui_s_VideoNetwork, ui_s_VideoShow, ui_s_VideoEpisodeID, ui_s_VideoSeasonNumber, ui_s_VideoEpisodeNumber, ui_s_MediaType, ui_s_HDVideo, ui_s_Gapless, ui_p_PodcastURL, ui_p_PodcastGUID, ui_p_Podcast, ui_p_PodcastKeywords, ui_p_PodcastCategory, ui_l_Lyrics, ui_a_Artwork, ui_a_ArtworkScale, ui_a_Stepper, ui_a_Info, ui_c_Copyright, ui_c_PurchaseBy, ui_c_PurchaseDate, ui_c_AppleID, ui_c_AccountType, ui_c_iTunesCatalogID, ui_c_StoreID, ui_c_Description, ui_c_ISRC, ui_c_UserID, ui_c_AACType;
 
 #pragma mark - System Methods
 
@@ -49,8 +49,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self performSelectorInBackground:@selector(checkUpdateWithFeedback:) withObject:[NSNumber numberWithBool:NO]];
-    
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"NoUpdateCheck"]) {
+        [self performSelectorInBackground:@selector(checkUpdateWithFeedback:) withObject:[NSNumber numberWithBool:NO]];
+    }
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication
@@ -95,12 +96,14 @@ NSData *dataFromHEXString(NSString *theHEX)
     return data;
 }
 
-NSUInteger searchOffsetFromURLWithKey(NSURL *theURL, NSString *theKey)
+NSUInteger searchOffsetFromURLWithKey(NSURL *theURL, NSString *theKey, NSUInteger theMax)
 {
     
     NSData *data  = [[NSFileHandle fileHandleForReadingFromURL:theURL
-                                                        error:nil]
-                    readDataToEndOfFile];
+                                                        error:nil] readDataToEndOfFile];
+    if (theMax) {
+        data = [data subdataWithRange:NSMakeRange(0, theMax)];
+    }
     NSRange range = [data rangeOfData:dataFromHEXString(theKey)
                               options:0
                                 range:NSMakeRange(0, data.length)];
@@ -114,13 +117,13 @@ NSUInteger searchOffsetFromURLWithKey(NSURL *theURL, NSString *theKey)
     
 }
 
-void writeDataToURLWithHEXAndCapacity(NSData *theData, NSURL *theURL, NSString *theHEX, NSUInteger theCapacity)
+void writeDataToURLWithHEXAndCapacity(NSData *theData, NSURL *theURL, NSString *theHEX, NSUInteger theCapacity, NSUInteger theMax)
 {
     NSUInteger offset, len;
     NSMutableData *data;
     NSFileHandle *file;
     
-    offset = searchOffsetFromURLWithKey(theURL, theHEX);
+    offset = searchOffsetFromURLWithKey(theURL, theHEX, theMax);
     if (offset) {
         data = [[NSMutableData alloc] initWithCapacity:theCapacity];
         len  = theData.length;
@@ -138,14 +141,14 @@ void writeDataToURLWithHEXAndCapacity(NSData *theData, NSURL *theURL, NSString *
     }
 }
 
-NSData *readDataFromURLWithHEXAndCapacity(NSURL *theURL, NSString *theHEX, NSUInteger theCapacity)
+NSData *readDataFromURLWithHEXAndCapacity(NSURL *theURL, NSString *theHEX, NSUInteger theCapacity, NSUInteger theMax)
 {
     NSUInteger offset;
     NSData *data;
     NSFileHandle *file;
     
     data = nil;
-    offset = searchOffsetFromURLWithKey(theURL, theHEX);
+    offset = searchOffsetFromURLWithKey(theURL, theHEX, theMax);
     if (offset) {
         file = [NSFileHandle fileHandleForReadingFromURL:theURL error:nil];
         [file seekToFileOffset:offset+theHEX.length/2];
@@ -436,12 +439,14 @@ NSString *stringForOSType(OSType theOSType)
 - (void)writeUserIDToURL:(NSURL *)theURL withID:(NSUInteger)theID
 {
     NSData *data = dataForInteger(theID);
-    writeDataToURLWithHEXAndCapacity(data, theURL, CONST_KEY_HEX_USER, 4);
+    NSUInteger theMax = ([[NSUserDefaults standardUserDefaults] boolForKey:@"DeepScan"]) ? 0 : CONST_HEADER_LENGTH;
+    writeDataToURLWithHEXAndCapacity(data, theURL, CONST_KEY_HEX_USER, 4, theMax);
 }
 
 - (NSUInteger)userIDFromURL:(NSURL *)theURL
 {
-    NSData *d = readDataFromURLWithHEXAndCapacity(theURL, CONST_KEY_HEX_USER, 4);
+    NSUInteger theMax = ([[NSUserDefaults standardUserDefaults] boolForKey:@"DeepScan"]) ? 0 : CONST_HEADER_LENGTH;
+    NSData *d = readDataFromURLWithHEXAndCapacity(theURL, CONST_KEY_HEX_USER, 4, theMax);
     if (!d) {
         return 0;
     }
@@ -471,12 +476,14 @@ NSString *stringForOSType(OSType theOSType)
     }
     data = [[NSMutableData alloc] initWithCapacity:3];
     [data setData:dataFromHEXString([NSString stringWithFormat:@"%06lx", (long)val])];
-    writeDataToURLWithHEXAndCapacity(data, theURL, CONST_KEY_HEX_MODE, 0x14);
+    NSUInteger theMax = ([[NSUserDefaults standardUserDefaults] boolForKey:@"DeepScan"]) ? 0 : CONST_HEADER_LENGTH;
+    writeDataToURLWithHEXAndCapacity(data, theURL, CONST_KEY_HEX_MODE, 0x14, theMax);
 }
 
 - (NSUInteger)AACTypeFromURL:(NSURL *)theURL
 {
-    NSData *d = readDataFromURLWithHEXAndCapacity(theURL, CONST_KEY_HEX_MODE, 4);
+    NSUInteger theMax = ([[NSUserDefaults standardUserDefaults] boolForKey:@"DeepScan"]) ? 0 : CONST_HEADER_LENGTH;
+    NSData *d = readDataFromURLWithHEXAndCapacity(theURL, CONST_KEY_HEX_MODE, 4, theMax);
     if (!d) {
         return 0;
     }
@@ -500,12 +507,14 @@ NSString *stringForOSType(OSType theOSType)
     NSData *data = [[theName stringByTrimmingCharactersInSet:
                      [NSCharacterSet newlineCharacterSet]]
                     dataUsingEncoding:NSUTF8StringEncoding];
-    writeDataToURLWithHEXAndCapacity(data, theURL, CONST_KEY_HEX_NAME, 0x100);
+    NSUInteger theMax = ([[NSUserDefaults standardUserDefaults] boolForKey:@"DeepScan"]) ? 0 : CONST_HEADER_LENGTH;
+    writeDataToURLWithHEXAndCapacity(data, theURL, CONST_KEY_HEX_NAME, 0x100, theMax);
 }
 
 - (NSString *)purchaseByFromURL:(NSURL *)theURL
 {
-    NSData *data = readDataFromURLWithHEXAndCapacity(theURL, CONST_KEY_HEX_NAME, 0x100);
+    NSUInteger theMax = ([[NSUserDefaults standardUserDefaults] boolForKey:@"DeepScan"]) ? 0 : CONST_HEADER_LENGTH;
+    NSData *data = readDataFromURLWithHEXAndCapacity(theURL, CONST_KEY_HEX_NAME, 0x100, theMax);
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
@@ -526,7 +535,7 @@ NSString *stringForOSType(OSType theOSType)
             NSString *s;
             NSUInteger i;
             NSData *d;
-            g_Covers                              = [NSMutableArray arrayWithArray:coverArrayWithURL(g_FileURL)];
+            g_Covers = [NSMutableArray arrayWithArray:coverArrayWithURL(g_FileURL)];
 
             NSImage *c = [[NSImage alloc] initWithData:g_FileMetaDict[@"covr"]];
             if (c) {
@@ -586,8 +595,8 @@ NSString *stringForOSType(OSType theOSType)
 
             ui_l_Lyrics.string                    = (s = g_FileMetaDict[@"©lyr"]) ? s : @"";
 
-            ui_a_Stepper.doubleValue              = 0;
-            ui_a_Stepper.maxValue                 = g_Covers.count-1;
+            //ui_a_Stepper.doubleValue              = 0;
+            //ui_a_Stepper.maxValue                 = g_Covers.count-1;
             //ui_a_Info.stringValue                 = (s = g_FileMetaDict[@""]) ? s : @"";
             
             ui_c_Copyright.stringValue            = (s = g_FileMetaDict[@"cprt"]) ? s : @"";
@@ -661,9 +670,9 @@ NSString *stringForOSType(OSType theOSType)
     ui_l_Lyrics.string                    = @"";
 
     ui_a_Artwork.image                    = nil;
-    ui_a_Stepper.doubleValue              = 0;
-    ui_a_Stepper.maxValue                 = 0;
-    ui_a_Info.stringValue                 = @"";
+    //ui_a_Stepper.doubleValue              = 0;
+    //ui_a_Stepper.maxValue                 = 0;
+    //ui_a_Info.stringValue                 = @"";
 
     ui_c_Copyright.stringValue            = @"";
     ui_c_PurchaseBy.stringValue           = @"";
@@ -1156,13 +1165,18 @@ NSString *stringForOSType(OSType theOSType)
                 [g_FileMetaDict removeObjectForKey:@"xid "];
             }
         }
-
+#ifndef DEBUG
+        [self writeAssetToURL:g_FileURL
+               withDictionary:g_FileMetaDict
+                  andFileType:theFileType
+                    andFormat:AVMetadataFormatiTunesMetadata
+                  andKeySpace:AVMetadataKeySpaceiTunes];
+#else
         BOOL result = [self writeAssetToURL:g_FileURL
                              withDictionary:g_FileMetaDict
                                 andFileType:theFileType
                                   andFormat:AVMetadataFormatiTunesMetadata
                                 andKeySpace:AVMetadataKeySpaceiTunes];
-#ifdef DEBUG
         NSLog(@"Save result: %d", result);
 #endif
     }
@@ -1571,9 +1585,9 @@ NSString *stringForOSType(OSType theOSType)
 
 - (void)resetWarnings
 {
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"NoUpdateCheck"];
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"AllowMultipleSaving"];
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"AllowPermanentRemoving"];
-    [[NSUserDefaults standardUserDefaults] boolForKey:@""];
 }
 
 - (void)alertNoUpdateOnMainThread:(NSAlert *)theAlert
@@ -1605,20 +1619,26 @@ NSString *stringForOSType(OSType theOSType)
                                                  defaultButton:@"Nice"
                                                alternateButton:nil
                                                    otherButton:nil
-                                     informativeTextWithFormat:@"You are using the latest version of %@.\n", [[NSRunningApplication currentApplication] localizedName]];
-                [alert setAlertStyle:NSWarningAlertStyle];
-                [self performSelectorOnMainThread:@selector(alertNoUpdateOnMainThread:) withObject:alert waitUntilDone:NO];
+                                     informativeTextWithFormat:@"You are using the latest version of %@.", [[NSRunningApplication currentApplication] localizedName]];
+                alert.accessoryView = ui_m_UpdateOptionView;
+                alert.alertStyle = NSInformationalAlertStyle;
+                [self performSelectorOnMainThread:@selector(alertNoUpdateOnMainThread:)
+                                       withObject:alert
+                                    waitUntilDone:NO];
             }
         } else {
             NSAlert *alert = [NSAlert alertWithMessageText:@"New Version Available!"
                                              defaultButton:@"Sure"
                                            alternateButton:@"Maybe Next Time"
                                                otherButton:@"Release Note"
-                                 informativeTextWithFormat:@"There's a new version available for download:\n\nVersion %@ (You have %@)\n\nWould you like to download it now?\n",
+                                 informativeTextWithFormat:@"There's a new version available for download:\n\nVersion %@ (You have %@)\n\nWould you like to download it now?",
                               remoteCFBundleShortVersionString,
                               localCFBundleShortVersionString];
-            [alert setAlertStyle:NSWarningAlertStyle];
-            [self performSelectorOnMainThread:@selector(alertUpdateOnMainThread:) withObject:alert waitUntilDone:NO];
+            alert.accessoryView = ui_m_UpdateOptionView;
+            alert.alertStyle = NSWarningAlertStyle;
+            [self performSelectorOnMainThread:@selector(alertUpdateOnMainThread:)
+                                   withObject:alert
+                                waitUntilDone:NO];
         }
     }
 }

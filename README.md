@@ -52,6 +52,10 @@ Q & A
 * **The fields that has number as value:** Between **0** and **65535**. Some fields might accept larger values.
 * **For cover artworks:** You can add **ANY** image that supported by OS X. They will be converted and stored as **JPEG** in the metada. You can drag and drop them into the preview box or use the "Add" button.
 
+**Q: What's that "Deep Scan" option for?**
+
+**A:** By default, the application will only search the extra data in the first 1024 bytes to shorten the processing time. In the Deep Scan mode, it will however, search the whole file.
+
 **Q: What's that "Scale" option for cover artwork?**
 
 **A:** If "scale" is enabled, the artwork will be resized to **600px** before it's being stored, depends on the longest side. Exporting format can be **BMP**, **GIF**, **JPEG**, **PNG** and **TIFF**.
@@ -90,6 +94,11 @@ A: Apple currently has 5 types of AACs, they can either be:
 
 Changelog
 ---------
+
+**v0.2.5:**
+
+* New feaure - Add Deep Scan option.
+* New feaure - Add update check option.
 
 **v0.2.4:**
 

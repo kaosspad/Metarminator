@@ -30,11 +30,14 @@
 #define CONST_KEY_HEX_MODE        @"0000016D6F6465"
 #define CONST_KEY_HEX_NAME        @"000001086E616D65"
 
+#define CONST_HEADER_LENGTH       0x400
+
 #pragma mark - Header Files
 
 #import <Cocoa/Cocoa.h>
 
 @interface MetarminatorAppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate> {
+    NSThread            * g_MetaThread;
     NSURL               * g_FileURL;
     NSMutableArray      * g_FileURLs;
     NSMutableDictionary * g_FileMetaDict;
@@ -52,6 +55,7 @@
 @property (assign) IBOutlet NSButton            *ui_m_Save;
 @property (assign) IBOutlet NSMenuItem          *ui_m_SaveAll;
 @property (assign) IBOutlet NSButton            *ui_m_Remove;
+@property (assign) IBOutlet NSButton            *ui_m_DeepScan;
 @property (assign) IBOutlet NSButton            *ui_m_Drawer;
 @property (assign) IBOutlet NSButton            *ui_m_Play;
 @property (assign) IBOutlet NSButton            *ui_m_Edit;
@@ -64,6 +68,11 @@
 @property (assign) IBOutlet NSMenuItem          *ui_mm_SaveAll;
 @property (assign) IBOutlet NSMenuItem          *ui_mm_SaveAs;
 @property (assign) IBOutlet NSMenuItem          *ui_mm_Remove;
+
+#pragma mark UI Objects - Update Option
+
+@property (assign) IBOutlet NSView              *ui_m_UpdateOptionView;
+@property (assign) IBOutlet NSButton            *ui_m_UpdateOptionCheckbox;
 
 #pragma mark UI Objects - Cover Export
 
