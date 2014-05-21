@@ -5,7 +5,7 @@ An iTunes Metadata editor for the rest of us.
 
 [Project Site](https://github.com/x43x61x69/Metarminator)
 
-![Screenshot](https://dl.dropboxusercontent.com/s/h4r6j0qzofwsffx/Metarminator.png)
+![Screenshot](https://raw.githubusercontent.com/x43x61x69/Metarminator/master/Screenshot.png)
 
 
 
