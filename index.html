@@ -28,7 +28,7 @@
         </ul>
       </header>
       <section>
-        <p><img src="https://dl.dropboxusercontent.com/s/h4r6j0qzofwsffx/Metarminator.png" alt="Screenshot"></p>
+        <p><img src="https://raw.githubusercontent.com/x43x61x69/Metarminator/master/Screenshot.png" alt="Screenshot"></p>
 
 <hr><h2>
 <a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h2>
@@ -75,7 +75,11 @@
 <strong>The fields that has number as value:</strong> Between <strong>0</strong> and <strong>65535</strong>. Some fields might accept larger values.</li>
 <li>
 <strong>For cover artworks:</strong> You can add <strong>ANY</strong> image that supported by OS X. They will be converted and stored as <strong>JPEG</strong> in the metada. You can drag and drop them into the preview box or use the "Add" button.</li>
-</ul><p><strong>Q: What's that "Scale" option for cover artwork?</strong></p>
+</ul><p><strong>Q: What's that "Deep Scan" option for?</strong></p>
+
+<p><strong>A:</strong> By default, the application will only search the extra data in the first 1024 bytes to shorten the processing time. In the Deep Scan mode, it will however, search the whole file.</p>
+
+<p><strong>Q: What's that "Scale" option for cover artwork?</strong></p>
 
 <p><strong>A:</strong> If "scale" is enabled, the artwork will be resized to <strong>600px</strong> before it's being stored, depends on the longest side. Exporting format can be <strong>BMP</strong>, <strong>GIF</strong>, <strong>JPEG</strong>, <strong>PNG</strong> and <strong>TIFF</strong>.</p>
 
@@ -115,7 +119,17 @@
 <hr><h2>
 <a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h2>
 
-<p><strong>v0.2.4:</strong></p>
+<p><strong>v0.2.6:</strong></p>
+
+<ul>
+<li>Bug fix - Remove part of metadata that might damage the metadata section. All of the old versions should update.</li>
+<li>Bug fix - Fix the remove artwork button.</li>
+</ul><p><strong>v0.2.5:</strong></p>
+
+<ul>
+<li>New feaure - Add Deep Scan option.</li>
+<li>New feaure - Add update check option.</li>
+</ul><p><strong>v0.2.4:</strong></p>
 
 <ul>
 <li>Bug fix - Fix crash when trying to write track/disc data while original does not exist.</li>
