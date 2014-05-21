@@ -241,6 +241,7 @@
 - (IBAction)switchFile:(id)sender;
 - (IBAction)removeFile:(id)sender;
 - (IBAction)addCover:(id)sender;
+- (IBAction)removeCover:(id)sender;
 - (IBAction)exportCover:(id)sender;
 - (IBAction)exportTypeChange:(NSPopUpButton *)sender;
 - (IBAction)sliderValue:(NSSlider *)sender;

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Metarminator/MetarminatorAppDelegate.m"
-            timestampString = "422253634.689103"
+            timestampString = "422397465.349206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "-writeAssetToURL:withDictionary:andFileType:andFormat:andKeySpace:"
             landmarkType = "5">
          </BreakpointContent>

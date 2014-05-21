@@ -95,6 +95,11 @@ A: Apple currently has 5 types of AACs, they can either be:
 Changelog
 ---------
 
+**v0.2.6:**
+
+* Bug fix - Remove part of metadata that might damage the metadata section. All of the old versions should update.
+* Bug fix - Fix the remove artwork button.
+
 **v0.2.5:**
 
 * New feaure - Add Deep Scan option.

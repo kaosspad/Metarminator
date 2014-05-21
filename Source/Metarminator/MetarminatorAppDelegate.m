@@ -180,6 +180,7 @@ NSData *readDataFromURLWithHEXAndCapacity(NSURL *theURL, NSString *theHEX, NSUIn
     NSMutableDictionary *mutableMetadataDict = [NSMutableDictionary dictionaryWithDictionary:assetDict];
     [mutableMetadataDict removeObjectForKey:@"com.apple.iTunes.iTunSMPB"];
     [mutableMetadataDict removeObjectForKey:@"com.apple.iTunes.iTunNORM"];
+    [mutableMetadataDict removeObjectForKey:@"meta"];
     
     NSMutableArray *newMetadata = [NSMutableArray array];
     for (id key in [mutableMetadataDict keyEnumerator]) {
@@ -774,7 +775,9 @@ NSString *stringForOSType(OSType theOSType)
             if (ui_a_ArtworkScale && ui_a_Artwork.image) {
                 d = [self resizeCover:ui_a_Artwork.image maxLength:600];
             } else if (ui_a_Artwork.image) {
-                d = [self dataFromImage:ui_a_Artwork.image withType:NSJPEGFileType andCompressionFactor:1.0];
+                d = [self dataFromImage:ui_a_Artwork.image
+                               withType:NSJPEGFileType
+                   andCompressionFactor:1.0];
             } else {
                 // Do nothing
             }
@@ -1314,6 +1317,13 @@ NSString *stringForOSType(OSType theOSType)
     }
 }
 
+- (void)removeCover
+{
+    if (ui_a_Artwork.image) {
+        ui_a_Artwork.image = nil;
+    }
+}
+
 - (void)exportCover
 {
     if (ui_a_Artwork.image) {
@@ -1765,6 +1775,11 @@ NSString *stringForOSType(OSType theOSType)
 - (IBAction)addCover:(id)sender
 {
     [self addCover];
+}
+
+- (IBAction)removeCover:(id)sender
+{
+    [self removeCover];
 }
 
 - (IBAction)exportCover:(id)sender
