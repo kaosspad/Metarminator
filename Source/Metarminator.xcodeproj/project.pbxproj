@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72509D71930D01C00B1B0DA /* Appicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B72509D61930D01C00B1B0DA /* Appicon.icns */; };
 		B751C4E61925B11400EEDD44 /* Image.car in Resources */ = {isa = PBXBuildFile; fileRef = B751C4E51925B11400EEDD44 /* Image.car */; };
 		B751C589192983D500BB9B83 /* NSDropWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B751C588192983D500BB9B83 /* NSDropWindow.m */; };
 		B767326419205DB30099F302 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767326319205DB30099F302 /* Cocoa.framework */; };
@@ -15,16 +16,16 @@
 		B767327419205DB30099F302 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B767327219205DB30099F302 /* Credits.rtf */; };
 		B767327719205DB30099F302 /* MetarminatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B767327619205DB30099F302 /* MetarminatorAppDelegate.m */; };
 		B767327A19205DB40099F302 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B767327819205DB40099F302 /* MainMenu.xib */; };
-		B767327C19205DB40099F302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B767327B19205DB40099F302 /* Images.xcassets */; };
 		B767328319205DB40099F302 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767328219205DB40099F302 /* XCTest.framework */; };
 		B767328419205DB40099F302 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767326319205DB30099F302 /* Cocoa.framework */; };
 		B767328C19205DB40099F302 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B767328A19205DB40099F302 /* InfoPlist.strings */; };
 		B767328E19205DB40099F302 /* MetarminatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B767328D19205DB40099F302 /* MetarminatorTests.m */; };
-		B767329919205E2B0099F302 /* Appicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B767329819205E2B0099F302 /* Appicon.icns */; };
 		B76732A019205EE70099F302 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767329F19205EE70099F302 /* AVFoundation.framework */; };
 		B76C6E1D1924AA8B001E2DF1 /* Data.car in Resources */ = {isa = PBXBuildFile; fileRef = B76C6E1C1924AA8B001E2DF1 /* Data.car */; };
 		B7BA32C119208B3F00096BD9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B7BA32BF19208B3E00096BD9 /* LICENSE */; };
 		B7BA32C219208B3F00096BD9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B7BA32C019208B3E00096BD9 /* README.md */; };
+		B7D7E9B419368020009D0C57 /* GoogleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D7E9B319368020009D0C57 /* GoogleSDK.framework */; };
+		B7D7E9B51936802B009D0C57 /* GoogleSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7D7E9B319368020009D0C57 /* GoogleSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +45,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B7D7E9B51936802B009D0C57 /* GoogleSDK.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B72509D61930D01C00B1B0DA /* Appicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Appicon.icns; path = Images/Appicon.icns; sourceTree = "<group>"; };
 		B751C4E51925B11400EEDD44 /* Image.car */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Image.car; sourceTree = "<group>"; };
 		B751C587192983D500BB9B83 /* NSDropWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDropWindow.h; path = Classes/NSDropWindow.h; sourceTree = "<group>"; };
 		B751C588192983D500BB9B83 /* NSDropWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDropWindow.m; path = Classes/NSDropWindow.m; sourceTree = "<group>"; };
@@ -66,17 +69,16 @@
 		B767327519205DB30099F302 /* MetarminatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetarminatorAppDelegate.h; sourceTree = "<group>"; };
 		B767327619205DB30099F302 /* MetarminatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetarminatorAppDelegate.m; sourceTree = "<group>"; };
 		B767327919205DB40099F302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B767327B19205DB40099F302 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B767328119205DB40099F302 /* MetarminatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetarminatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B767328219205DB40099F302 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B767328919205DB40099F302 /* MetarminatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetarminatorTests-Info.plist"; sourceTree = "<group>"; };
 		B767328B19205DB40099F302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B767328D19205DB40099F302 /* MetarminatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetarminatorTests.m; sourceTree = "<group>"; };
-		B767329819205E2B0099F302 /* Appicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Appicon.icns; sourceTree = "<group>"; };
 		B767329F19205EE70099F302 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B76C6E1C1924AA8B001E2DF1 /* Data.car */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Data.car; sourceTree = "<group>"; };
 		B7BA32BF19208B3E00096BD9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B7BA32C019208B3E00096BD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B7D7E9B319368020009D0C57 /* GoogleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSDK.framework; path = Metarminator/Framework/GoogleSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D7E9B419368020009D0C57 /* GoogleSDK.framework in Frameworks */,
 				B76732A019205EE70099F302 /* AVFoundation.framework in Frameworks */,
 				B767326419205DB30099F302 /* Cocoa.framework in Frameworks */,
 			);
@@ -134,6 +137,7 @@
 		B767326219205DB30099F302 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7D7E9B319368020009D0C57 /* GoogleSDK.framework */,
 				B767329F19205EE70099F302 /* AVFoundation.framework */,
 				B767326319205DB30099F302 /* Cocoa.framework */,
 				B767328219205DB40099F302 /* XCTest.framework */,
@@ -159,7 +163,6 @@
 				B767327519205DB30099F302 /* MetarminatorAppDelegate.h */,
 				B767327619205DB30099F302 /* MetarminatorAppDelegate.m */,
 				B767327819205DB40099F302 /* MainMenu.xib */,
-				B767327B19205DB40099F302 /* Images.xcassets */,
 				B767326A19205DB30099F302 /* Supporting Files */,
 			);
 			path = Metarminator;
@@ -169,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				B76C6E1B1924AA8B001E2DF1 /* Resources */,
-				B767329819205E2B0099F302 /* Appicon.icns */,
+				B72509D61930D01C00B1B0DA /* Appicon.icns */,
 				B767326B19205DB30099F302 /* Metarminator-Info.plist */,
 				B767326C19205DB30099F302 /* InfoPlist.strings */,
 				B767326F19205DB30099F302 /* main.m */,
@@ -287,10 +290,9 @@
 			files = (
 				B751C4E61925B11400EEDD44 /* Image.car in Resources */,
 				B767326E19205DB30099F302 /* InfoPlist.strings in Resources */,
-				B767327C19205DB40099F302 /* Images.xcassets in Resources */,
 				B7BA32C119208B3F00096BD9 /* LICENSE in Resources */,
-				B767329919205E2B0099F302 /* Appicon.icns in Resources */,
 				B7BA32C219208B3F00096BD9 /* README.md in Resources */,
+				B72509D71930D01C00B1B0DA /* Appicon.icns in Resources */,
 				B767327419205DB30099F302 /* Credits.rtf in Resources */,
 				B76C6E1D1924AA8B001E2DF1 /* Data.car in Resources */,
 				B767327A19205DB40099F302 /* MainMenu.xib in Resources */,
@@ -461,12 +463,13 @@
 		B767329219205DB40099F302 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = Cai;
+				CODE_SIGN_IDENTITY = "Cai, Zhi-Wei";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Metarminator/Frameworks",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/Metarminator/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metarminator/Metarminator-Prefix.pch";
@@ -481,12 +484,13 @@
 		B767329319205DB40099F302 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = Cai;
+				CODE_SIGN_IDENTITY = "Cai, Zhi-Wei";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Metarminator/Frameworks",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/Metarminator/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metarminator/Metarminator-Prefix.pch";

@@ -23,6 +23,8 @@
 
 #import <dispatch/dispatch.h>
 
+#import <GoogleSDK/AnalyticsHelper.h>
+
 @implementation MetarminatorAppDelegate
 
 #pragma mark - Synthesize
@@ -49,6 +51,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [self performSelectorInBackground:@selector(ga:) withObject:@"Metarminator-Launch"];
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"NoUpdateCheck"]) {
         [self performSelectorInBackground:@selector(checkUpdateWithFeedback:) withObject:[NSNumber numberWithBool:NO]];
     }
@@ -1600,6 +1603,17 @@ NSString *stringForOSType(OSType theOSType)
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"AllowPermanentRemoving"];
 }
 
+- (void)ga:(NSString *)event
+{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"NoTracking"]) {
+        return;
+    }
+    AnalyticsHelper* analyticsHelper = [AnalyticsHelper new];
+    [analyticsHelper setDomainName:@"x43x61x69.github.io"];
+    [analyticsHelper setAnalyticsAccountCode:@"UA-49707923-2"];
+    [analyticsHelper fireEvent:event eventValue:@1];
+}
+
 - (void)alertNoUpdateOnMainThread:(NSAlert *)theAlert
 {
     [theAlert runModal];
@@ -1620,6 +1634,7 @@ NSString *stringForOSType(OSType theOSType)
 - (void)checkUpdateWithFeedback:(BOOL)feedback
 {
     NSURL *requestResult = [NSURL URLWithString:CONST_UPDATE_CHECK_URL];
+    [self performSelectorInBackground:@selector(ga:) withObject:@"Metarminator-Update"];
     NSString *remoteCFBundleShortVersionString = [[NSDictionary dictionaryWithContentsOfURL:requestResult] objectForKey:@"CFBundleShortVersionString"];
     NSString *localCFBundleShortVersionString  = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     if(remoteCFBundleShortVersionString) {

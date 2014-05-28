@@ -95,6 +95,15 @@ A: Apple currently has 5 types of AACs, they can either be:
 Changelog
 ---------
 
+**v0.2.8:**
+
+* Improve - Data analyzing.
+
+**v0.2.7:**
+
+* Alter - Icon changed.
+* Alter - New codesign signature.
+
 **v0.2.6:**
 
 * Bug fix - Remove part of metadata that might damage the metadata section. All of the old versions should update.
